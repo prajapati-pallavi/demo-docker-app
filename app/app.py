@@ -20,7 +20,7 @@ def home():
         cursor = conn.cursor()
         cursor.execute("SELECT DATABASE();")
         result = cursor.fetchone()
-        return f"Let's learn Docker + Git + GIthub\nAttempting to connect to MySQL...\n Connected to MySQL: {result}"
+        return f"Hello! Let's see if we have successfully created auto deployement. Connected to MySQL: {result}"
     except Exception as e:
         return f"Error: {e}"
 
